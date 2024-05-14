@@ -15,6 +15,7 @@ public partial class vActualizar : ContentPage
     private void btnEliminar_Clicked(object sender, EventArgs e)
     {
 
+
     }
 
     private void tnbActualizar_Clicked(object sender, EventArgs e)
