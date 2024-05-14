@@ -7,9 +7,9 @@ public partial class vActualizar : ContentPage
 	public vActualizar(Estudiante datos)
 	{
 		InitializeComponent();
-        TxtNombre.Text= datos.ToString();
-        TxtApellido.Text= datos.ToString();
-        TxtEdad.Text= datos.ToString();
+        TxtNombre.Text= datos.nombre.ToString();
+       TxtApellido.Text= datos.apellido.ToString();
+       TxtEdad.Text= datos.edad.ToString();
 	}
 
     private void btnEliminar_Clicked(object sender, EventArgs e)

@@ -30,7 +30,13 @@ public partial class vInicio : ContentPage
     private void btnAgregar_Clicked(object sender, EventArgs e)
     {
         Navigation.PushAsync(new Vistas.vAgregar());
-        //var objestudiante =(Estudiante)e.SelecteItem;
-        //Navigation.PushAsync(new Vistas.vActualizar());
+        
+    }
+
+    private void listaEstudiantes_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+    {
+        var objestudiante =(Estudiante)e.SelectedItem;
+		Navigation.PushAsync(new Vistas.vActualizar(objestudiante));
+
     }
 }

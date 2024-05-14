@@ -17,7 +17,7 @@ public partial class vAgregar : ContentPage
 			var parametros = new System.Collections.Specialized.NameValueCollection();
 			parametros.Add("nombre", TxtNombre.Text);
 			parametros.Add("apellido",TxtApellido.Text);
-			parametros.Add("eda",TxtEdad.Text);
+			parametros.Add("edad",TxtEdad.Text);
 			cliente.UploadValues("http://192.168.17.37:80/appmovil/post.php", "POST", parametros);
 			Navigation.PushAsync(new vInicio());
 
