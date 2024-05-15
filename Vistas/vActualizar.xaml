@@ -4,6 +4,9 @@
              x:Class="dgalvezt6.Vistas.vActualizar"
              Title="vActualizar">
     <VerticalStackLayout>
+        <Entry x:Name="Txtcodigo"
+/>
+       
         <Entry x:Name="TxtNombre"
         Placeholder="Ingrese el nombre"/>
         <Entry x:Name="TxtApellido"

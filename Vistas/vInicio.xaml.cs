@@ -6,7 +6,7 @@ namespace dgalvezt6.Vistas;
 
 public partial class vInicio : ContentPage
 {
-	private const string Url = "http://192.168.17.37:80/appmovil/post.php";
+	private const string Url = "http://192.168.0.103:80/appmovil/post.php";
 	private readonly HttpClient cliente = new HttpClient();
 	private ObservableCollection<Estudiante> estud;
 	public vInicio()

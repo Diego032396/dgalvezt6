@@ -15,7 +15,7 @@
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="75"/>
+                <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="75"/>
                 <ColumnDefinition Width="75"/>
 				<ColumnDefinition Width="75"/>
@@ -25,7 +25,7 @@
             <Label Text="Apellido" Grid.Row="1" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Center"/>
             <Label Text="Edad" Grid.Row="1" Grid.Column="3" HorizontalOptions="Center" VerticalOptions="Center"/>
             <Button x:Name="btnActualizar" Text="Actualizar" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center" Clicked="btnActualizar_Clicked"/>
-			<Button x:Name="btnAgregar" Text="Actualizar" Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" Clicked="btnAgregar_Clicked"/>
+			<Button x:Name="btnAgregar" Text="Agregar" Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" Clicked="btnAgregar_Clicked"/>
 		    
 		</Grid>
 
