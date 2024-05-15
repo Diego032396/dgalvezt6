@@ -19,6 +19,7 @@ public partial class vActualizar : ContentPage
     private async void btnEliminar_Clicked(object sender, EventArgs e)
     {
 
+
         Navigation.PushAsync(new Vistas.vInicio());
     }
 
