@@ -5,20 +5,20 @@ namespace dgalvezt6.Vistas;
 
 public partial class vActualizar : ContentPage
 {
-    Estudiante estud;
+    Estudiante dato;
     public vActualizar(Estudiante datos)
 	{
         
 		InitializeComponent();
-        estud = datos;
+        dato = datos;
         initializer();
 	}
     private void initializer()
     {
-        TxtNombre.Text = estud.nombre;
-        TxtApellido.Text = estud.apellido;
-        TxtEdad.Text = estud.edad.ToString() ;
-        Txtcodigo.Text = estud.codigo.ToString();
+        TxtNombre.Text = dato.nombre;
+        TxtApellido.Text = dato.apellido;
+        TxtEdad.Text = dato.edad.ToString() ;
+        Txtcodigo.Text = dato.codigo.ToString();
     }
 
 
@@ -30,7 +30,6 @@ public partial class vActualizar : ContentPage
             WebClient cliente = new WebClient();
             var parametros = new System.Collections.Specialized.NameValueCollection();
             cliente.UploadValues("http://192.168.0.103:80/appmovil/post.php?codigo=" + Txtcodigo.Text, "DELETE", parametros);
-            DisplayAlert("OK", "Registro Eliminado", "Cerrar");
             Navigation.PushAsync(new Vistas.vInicio());
 
         }
